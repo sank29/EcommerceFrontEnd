@@ -26,7 +26,11 @@ form.addEventListener("submit", async (event) => {
 
   let data1 = await data.json();
 
-  let data2 = await data1.json();
+  // let data2 = await data1.json();
 
-  console.log(data);
+  let uuidKey = data1.uuid;
+
+  console.log(data1);
+
+  console.log(uuidKey);
 });
