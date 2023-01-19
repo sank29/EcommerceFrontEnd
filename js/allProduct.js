@@ -3,7 +3,7 @@ let uuid = localStorage.getItem("uuidkey");
 ////////////////////////////////check user is login or not/////////////////
 
 let loginORNot = async () => {
-  let url = `http://localhost:8888/checkLogin/${uuid}a`;
+  let url = `http://localhost:8888/checkLogin/${uuid}`;
 
   let loginOrNot = await fetch(url);
 
