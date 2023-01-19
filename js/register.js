@@ -37,7 +37,7 @@ form.addEventListener("submit", async (event) => {
       "You have succefully register in our database. You are redirecting towards login page"
     );
 
-    window.location.href = "./index.html";
+    window.location.href = "../index.html";
   } else {
     alert(data1.errorMsg + ". Please login.");
   }

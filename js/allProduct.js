@@ -1,5 +1,29 @@
 let uuid = localStorage.getItem("uuidkey");
 
+////////////////////////////////check user is login or not/////////////////
+
+let loginORNot = async () => {
+  let url = `http://localhost:8888/checkLogin/${uuid}a`;
+
+  let loginOrNot = await fetch(url);
+
+  let data = await loginOrNot.json();
+
+  console.log();
+
+  if (!data.loginOrNot) {
+    alert("Please login before accessing this page!!!!");
+
+    window.location.href = "../index.html";
+  }
+
+  displayAllProduct();
+};
+
+loginORNot();
+
+///////////////////////////////////////end of check user is login or not //////////////////
+
 let allProduct = document.getElementById("allProduct");
 
 let getAllProudct = async () => {
@@ -44,5 +68,3 @@ let displayAllProduct = async () => {
     allProduct.append(para4, para1, para2, para3);
   });
 };
-
-displayAllProduct();
