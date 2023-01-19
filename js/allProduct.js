@@ -26,6 +26,9 @@ loginORNot();
 
 let allProduct = document.getElementById("allProduct");
 
+allProduct.style.display = "flex";
+allProduct.style.gap = "10px";
+
 let getAllProudct = async () => {
   let url = `http://localhost:8888/products?key=${uuid}`;
 
@@ -44,11 +47,15 @@ let displayAllProduct = async () => {
   let newDiv = document.createElement("div");
 
   productData.forEach((eachProuct) => {
+    let div = document.createElement("div");
+    div.style.border = "1px solid black";
+    div.setAttribute("class", "eachDiv");
+
     let para1 = document.createElement("p");
     let para2 = document.createElement("p");
     let para3 = document.createElement("p");
     let para4 = document.createElement("p");
-    let para5 = document.createElement("p");
+    let cartButton = document.createElement("button");
 
     let img = document.createElement("img");
     img.setAttribute("class", "productImg");
@@ -65,6 +72,10 @@ let displayAllProduct = async () => {
 
     para3.innerText = eachProuct.type;
 
-    allProduct.append(para4, para1, para2, para3);
+    cartButton.innerText = "Add To Cart";
+
+    div.append(para4, para1, para2, para3, cartButton);
+
+    allProduct.append(div);
   });
 };
