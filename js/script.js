@@ -1,6 +1,7 @@
 let form = document.getElementById("form");
 let cart = document.getElementById("pills-profile-tab");
 let home = document.getElementById("pills-home-tab");
+let contact = document.getElementById("pills-contact-tab");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -45,4 +46,8 @@ cart.addEventListener("click", (event) => {
 
 home.addEventListener("click", (event) => {
   window.location.href = "../allProduct.html";
+});
+
+contact.addEventListener("click", (event) => {
+  window.location.href = "../contact.html";
 });
