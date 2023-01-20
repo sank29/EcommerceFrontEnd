@@ -1,5 +1,6 @@
 let cart = document.getElementById("pills-profile-tab");
 let login = document.getElementById("pills-login-tab");
+let contact = document.getElementById("pills-contact-tab");
 
 ////////////////////////////////check user is login or not/////////////////
 let uuid = localStorage.getItem("uuidkey");
@@ -89,4 +90,8 @@ cart.addEventListener("click", (event) => {
 
 login.addEventListener("click", (event) => {
   window.location.href = "../index.html";
+});
+
+contact.addEventListener("click", (event) => {
+  window.location.href = "../contact.html";
 });
