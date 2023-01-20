@@ -1,4 +1,6 @@
 let form = document.getElementById("form");
+let cart = document.getElementById("pills-profile-tab");
+let home = document.getElementById("pills-home-tab");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -33,4 +35,14 @@ form.addEventListener("submit", async (event) => {
   console.log(uuidKey);
 
   localStorage.setItem("uuidkey", uuidKey);
+});
+
+cart.addEventListener("click", (event) => {
+  console.log("Hii somebody click me");
+
+  window.location.href = "../cart.html";
+});
+
+home.addEventListener("click", (event) => {
+  window.location.href = "../allProduct.html";
 });

@@ -1,7 +1,8 @@
-let uuid = localStorage.getItem("uuidkey");
 let cart = document.getElementById("pills-profile-tab");
+let login = document.getElementById("pills-login-tab");
 
 ////////////////////////////////check user is login or not/////////////////
+let uuid = localStorage.getItem("uuidkey");
 
 let loginORNot = async () => {
   let url = `http://localhost:8888/checkLogin/${uuid}`;
@@ -84,4 +85,8 @@ cart.addEventListener("click", (event) => {
   console.log("Hii somebody click me");
 
   window.location.href = "../cart.html";
+});
+
+login.addEventListener("click", (event) => {
+  window.location.href = "../index.html";
 });
