@@ -1,4 +1,5 @@
 let uuid = localStorage.getItem("uuidkey");
+let cart = document.getElementById("pills-profile-tab");
 
 ////////////////////////////////check user is login or not/////////////////
 
@@ -61,7 +62,6 @@ let displayAllProduct = async () => {
     img.setAttribute("class", "productImg");
     img.style.width = "200px";
 
-    // img.
     img.src = eachProuct.productImg;
 
     para4.append(img);
@@ -79,3 +79,9 @@ let displayAllProduct = async () => {
     allProduct.append(div);
   });
 };
+
+cart.addEventListener("click", (event) => {
+  console.log("Hii somebody click me");
+
+  window.location.href = "../cart.html";
+});
