@@ -58,7 +58,10 @@ let displayAllProduct = async () => {
     let para2 = document.createElement("p");
     let para3 = document.createElement("p");
     let para4 = document.createElement("p");
+
     let cartButton = document.createElement("button");
+    cartButton.style.background = "green";
+    cartButton.style.color = "white";
 
     let img = document.createElement("img");
     img.setAttribute("class", "productImg");
