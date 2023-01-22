@@ -41,6 +41,4 @@ form.addEventListener("submit", async (event) => {
   } else {
     alert(data1.errorMsg + ". Please login.");
   }
-
-  // console.log(data1);
 });
