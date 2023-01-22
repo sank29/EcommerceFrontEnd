@@ -12,8 +12,6 @@ let loginORNot = async () => {
 
   let data = await loginOrNot.json();
 
-  console.log();
-
   if (!data.loginOrNot) {
     alert("Please login before accessing this page!!!!");
 
@@ -38,8 +36,6 @@ let getAllProudct = async () => {
   let data = await fetch(url);
 
   let data1 = await data.json();
-
-  console.log(data1);
 
   return data1;
 };

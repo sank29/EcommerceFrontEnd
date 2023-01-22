@@ -13,8 +13,6 @@ let loginORNot = async () => {
 
   let data = await loginOrNot.json();
 
-  console.log();
-
   if (!data.loginOrNot) {
     alert("Please login before accessing this page!!!!");
 

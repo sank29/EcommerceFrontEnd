@@ -31,10 +31,6 @@ form.addEventListener("submit", async (event) => {
 
   let uuidKey = data1.uuid;
 
-  console.log(data1);
-
-  console.log(uuidKey);
-
   localStorage.setItem("uuidkey", uuidKey);
 });
 
