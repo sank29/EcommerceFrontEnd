@@ -64,7 +64,7 @@ let loginORNot = async () => {
   });
 };
 
-// loginORNot();
+loginORNot();
 
 ///////////////////////////////////////end of check user is login or not //////////////////
 
