@@ -44,6 +44,6 @@ home.addEventListener("click", (event) => {
   window.location.href = "../allProduct.html";
 });
 
-// contact.addEventListener("click", (event) => {
-//   window.location.href = "../contact.html";
-// });
+contact.addEventListener("click", (event) => {
+  window.location.href = "../contact.html";
+});
