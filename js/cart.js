@@ -48,7 +48,7 @@ let loginORNot = async () => {
 
     img.src = eachProuct.productImg;
 
-    // para4.append(img);
+    para4.append(img);
 
     para1.innerText = eachProuct.productName;
 
