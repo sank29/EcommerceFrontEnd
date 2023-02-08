@@ -20,15 +20,15 @@ form.addEventListener("submit", async (event) => {
     email: email,
   };
 
-  let data = await fetch(url, {
-    method: "POST",
+  // let data = await fetch(url, {
+  //   method: "POST",
 
-    headers: {
-      "Content-Type": "application/json",
-    },
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
 
-    body: JSON.stringify(customerDetails),
-  });
+  //   body: JSON.stringify(customerDetails),
+  // });
 
   let data1 = await data.json();
 
